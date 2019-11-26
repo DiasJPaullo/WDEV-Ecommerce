@@ -12,7 +12,11 @@ const routes: Routes = [
     component: LancamentosComponent
   },
  {
-    path: 'lancamentos',
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: '',
     component: HomeComponent
   }
 ];
