@@ -12,10 +12,10 @@ export class HomeComponent implements OnInit {
 
   constructor() {
     this.produtos = [
-      new Produto('Caneta',10),
-      new Produto('Caderno',15),
-      new Produto('Caneca',5),
-      new Produto('Carteira',80),
+      new Produto('Caneta',10,'http://encurtador.com.br/ilDOV'),
+      new Produto('Caderno',15,'http://encurtador.com.br/cmoIX'),
+      new Produto('Caneca',5,'http://encurtador.com.br/cmyG5'),
+      new Produto('Carteira',80,'http://encurtador.com.br/ISY67'),
 
     ];
    }

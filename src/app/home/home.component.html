@@ -4,15 +4,17 @@
        
         <table class="table table-striped">
             <thead>
-                <tr>
-                    <th>Produtos</th>
-                    <th>Valor</th>
+                <tr class="d-flex">
+                    <th class="col-sm-6">Produtos</th>
+                    <th class="col-sm-2">Valor</th>
+                    <th class="col-sm-4">Imagens</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor = "let produto of produtos">
-                    <td>{{produto.descricao}}</td>
-                    <td>R${{produto.valor | number: '.2'}}</td>
+                <tr class="d-flex" *ngFor = "let produto of produtos">
+                    <td class="col-sm-6">{{produto.descricao}}</td>
+                    <td class="col-sm-2">R$ {{produto.valor | number: '.2'}}</td>
+                    <td class="imagem col-sm-4" ><img src="{{produto.imagem}}"></td>
                 </tr>
                 <!-- <tr>
                     <td>Caderno</td>
